@@ -2,7 +2,10 @@ const centreDetails = document.getElementById("centreDetails");
 
 async function getData() {
   axios
-    .post("http://localhost:3000/admin/get-details", { key: "adminsecretkey" })
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/admin/get-details",
+      { key: "adminsecretkey" }
+    )
     .then((res) => {
       console.log(res.data);
       showRecords(res.data);
@@ -60,7 +63,10 @@ function deleteCentre(centreId) {
   };
   console.log(data);
   axios
-    .post("http://localhost:3000/admin/delete-centre", data)
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/admin/delete-centre",
+      data
+    )
     .then((res) => {
       console.log(res.data);
       alert("Vaccination Centre Deleted successfully");

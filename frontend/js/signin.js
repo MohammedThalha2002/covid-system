@@ -20,7 +20,10 @@ async function postData(email, password, name) {
     password: password,
   };
   axios
-    .post("http://localhost:3000/auth/signup", data)
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/auth/signup",
+      data
+    )
     .then((res) => {
       console.log(res.data);
       localStorage.setItem("email", email);

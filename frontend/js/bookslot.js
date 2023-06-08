@@ -2,7 +2,7 @@ const slots = document.getElementById("bookslot-parent");
 
 async function getData() {
   axios
-    .get("http://localhost:3000/search")
+    .get("https://covid-vaccination-booking-system-ur4e.onrender.com/search")
     .then((res) => {
       console.log(res.data);
 
@@ -49,7 +49,10 @@ function bookSlot(centreId) {
   };
   console.log(data);
   axios
-    .post("http://localhost:3000/book-slot", data)
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/book-slot",
+      data
+    )
     .then((res) => {
       console.log(res.data);
       alert("Slot booked successfully");
@@ -63,7 +66,9 @@ function bookSlot(centreId) {
 
 function Logout() {
   axios
-    .post("http://localhost:3000/auth/logout")
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/auth/logout"
+    )
     .then((res) => {
       console.log(res.data);
       alert("Logout successfully");

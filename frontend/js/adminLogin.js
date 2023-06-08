@@ -20,7 +20,10 @@ async function postData(email, password) {
   };
   console.log(data);
   axios
-    .post("https://covid-system.vercel.app/admin/login", data)
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/admin/login",
+      data
+    )
     .then((res) => {
       console.log(res.data);
       alert("Logged in successfully");

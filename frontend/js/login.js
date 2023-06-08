@@ -19,12 +19,15 @@ async function postData(email, password) {
   };
   console.log(data);
   axios
-    .post("http://localhost:3000/auth/login", data)
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/auth/login",
+      data
+    )
     .then((res) => {
       console.log(res.data);
       localStorage.setItem("email", email);
       localStorage.setItem("username", res.data.username);
-      alert("Logged in successfully")
+      alert("Logged in successfully");
     })
     .then(() => (window.location = "/bookslot"))
     .catch((err) => {

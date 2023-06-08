@@ -28,7 +28,10 @@ async function postData(place, workingHours, AMPM, slotsAvailable) {
   };
   console.log(data);
   axios
-    .post("http://localhost:3000/admin/add-centre", data)
+    .post(
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/admin/add-centre",
+      data
+    )
     .then((res) => {
       console.log(res.data);
       alert("Vaccination Added successfully");
@@ -40,6 +43,6 @@ async function postData(place, workingHours, AMPM, slotsAvailable) {
     });
 }
 
-function seeCentreDetails(){
-    window.location = "/admin-centre-details";
+function seeCentreDetails() {
+  window.location = "/admin-centre-details";
 }
