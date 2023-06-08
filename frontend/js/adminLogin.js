@@ -20,7 +20,7 @@ async function postData(email, password) {
   };
   console.log(data);
   axios
-    .post("http://localhost:3000/admin/login", data)
+    .post("https://covid-system.vercel.app/admin/login", data)
     .then((res) => {
       console.log(res.data);
       alert("Logged in successfully");
