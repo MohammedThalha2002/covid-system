@@ -27,6 +27,7 @@ async function postData(email, password) {
     })
     .then(() => (window.location = "/admin-add-centre"))
     .catch((err) => {
+      console.log("errereeee.....");
       console.log(err);
       alert(err.response.data.errors);
     });
