@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CENTRE DETAILS</title>
+  </head>
+  <body
+    class="h-screen w-screen bg-blue-200 flex flex-col items-center overflow-x-hidden"
+  >
+    <h1 class="font-medium text-5xl pt-10">Vaccination Centre Details</h1>
+    <div class="flex flex-col w-[90%] mt-16">
+      <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+          <div class="overflow-hidden">
+            <table class="min-w-full text-left text-sm font-light">
+              <thead class="border-b font-medium dark:border-neutral-500">
+                <tr>
+                  <th scope="col" class="px-6 py-4">S.No</th>
+                  <th scope="col" class="px-6 py-4">Location</th>
+                  <th scope="col" class="px-6 py-4">Time</th>
+                  <th scope="col" class="px-6 py-4">Slot Timing</th>
+                  <th scope="col" class="px-6 py-4">Booked Users</th>
+                  <th scope="col" class="px-6 py-4">Delete Centre</th>
+                </tr>
+              </thead>
+              <tbody id="centreDetails"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/adminCentreDetails.js"></script>
+  </body>
+</html>

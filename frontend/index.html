@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>COVID VACCINATION</title>
+  </head>
+  <body
+    id="home"
+    class="bg-white h-screen w-screen overflow-hidden flex justify-center items-center"
+  >
+    <button
+      class="h-[3rem] w-[10rem] rounded-lg bg-white font-medium hover:scale-105 transition"
+      onclick="navigate()"
+    >
+      LETS VACCINATE
+    </button>
+    <button
+      class="absolute top-4 right-5 h-[2rem] w-[10rem] rounded-lg border-2 text-white border-white font-medium hover:scale-105 transition"
+      onclick="adminNavigate()"
+    >
+      Admin Login
+    </button>
+  </body>
+  <script>
+    function navigate() {
+      window.location = "/login";
+    }
+    function adminNavigate() {
+      window.location = "/admin-login";
+    }
+  </script>
+</html>

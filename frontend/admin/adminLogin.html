@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <title>ADMIN LOGIN</title>
+  </head>
+  <body class="h-screen w-screen flex flex-col justify-center items-center">
+    <h1 class="text-black text-3xl mb-20 font-medium">ADMIN Login</h1>
+    <!-- Right column container with form -->
+    <div class="md:w-8/12 lg:ml-6 lg:w-5/12">
+      <form id="loginForm">
+        <!-- Email input -->
+        <div class="relative mb-6" data-te-input-wrapper-init>
+          <label for="email" class="text-black">Email</label>
+          <input
+            type="text"
+            class="peer text-black block min-h-[auto] border-2 border-black w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
+            id="email"
+            placeholder="Email address"
+          />
+        </div>
+
+        <!-- Password input -->
+        <div class="relative mb-6" data-te-input-wrapper-init>
+          <label for="password" class="text-black">Password</label>
+          <input
+            type="password"
+            class="peer text-black block min-h-[auto] border-2 border-black w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear motion-reduce:transition-none"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <!-- Submit button -->
+        <button
+          type="submit"
+          class="inline-block w-full border-2 border-blue-200 rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+        >
+          Log in
+        </button>
+      </form>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/adminLogin.js"></script>
+  </body>
+</html>

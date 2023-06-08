@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up</title>
+  </head>
+  <body id="signin">
+    <section class="h-screen bg-grey-500">
+      <div class="container h-full px-6 py-24">
+        <div
+          class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between"
+        >
+          <!-- Left column container with background-->
+          <div class="mb-12 md:mb-0 md:w-8/12 lg:w-6/12">
+            <img
+              src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+              class="w-full"
+              alt="Phone image"
+            />
+          </div>
+
+          <!-- Right column container with form -->
+          <div class="md:w-8/12 lg:ml-6 lg:w-5/12">
+            <form id="signinForm">
+              <!-- NAME INPUT -->
+              <div class="relative mb-6" data-te-input-wrapper-init>
+                <label for="name" class="text-white">Name</label>
+                <input
+                  type="text"
+                  class="peer block min-h-[auto] border-2 border-white w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="name"
+                  placeholder="Name"
+                />
+              </div>
+              <!-- Email input -->
+              <div class="relative mb-6" data-te-input-wrapper-init>
+                <label for="email" class="text-white">Email</label>
+                <input
+                  type="text"
+                  class="peer block min-h-[auto] border-2 border-white w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="email"
+                  placeholder="Email address"
+                />
+              </div>
+
+              <!-- Password input -->
+              <div class="relative mb-6" data-te-input-wrapper-init>
+                <label for="password" class="text-white">Password</label>
+                <input
+                  type="password"
+                  class="peer block min-h-[auto] border-2 border-white w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+              <!-- Submit button -->
+              <button
+                type="submit"
+                class="inline-block w-full border-2 border-blue-200 rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+              >
+                Sign in
+              </button>
+            </form>
+            <h1 class="text-white mt-10">
+              All ready have an account ?   <a
+                class="text-blue-500"
+                href="/login"
+                >LOGIN</a
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/signin.js"></script>
+  </body>
+</html>
