@@ -20,7 +20,7 @@ async function postData(email, password) {
   console.log(data);
   axios
     .post(
-      "https://covid-vaccination-booking-system-ur4e.onrender.com/auth/login",
+      "https://covid-vaccination-booking-system-ur4e.onrender.com/admin/login",
       data
     )
     .then((res) => {
@@ -28,8 +28,8 @@ async function postData(email, password) {
       localStorage.setItem("email", email);
       localStorage.setItem("username", res.data.username);
       alert("Logged in successfully");
+      window.location = "/bookslot";
     })
-    .then(() => (window.location = "/bookslot"))
     .catch((err) => {
       console.log(err);
       alert(err.response.data.errors);
